@@ -839,7 +839,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.0":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.0.tgz#4fc1d642a9fd0299754e8b5de62c631cf5568205"
   integrity sha512-89eSBLJsxNxOERC0Op4vd+0Bqm6wRMqMbFtV3i0/fbaWw/mJ8Q3eBvgX0G4SyrOOLCtbu98HspF8o09MRT+KzQ==
@@ -1591,6 +1591,13 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
+
+"@types/three@^0.103.2":
+  version "0.103.2"
+  resolved "https://registry.yarnpkg.com/@types/three/-/three-0.103.2.tgz#f7d49130001c551941a0ded757def810579aafc4"
+  integrity sha512-zhtf0Qs5wLJpIn1+VWCpzSgpKayj/GSWZ6woiuz09FW59KEDeLpnBkYz6lbblVpRmGdlnG8nd0unaASshOvcXw==
+  dependencies:
+    three "*"
 
 "@types/tmp@^0.0.32":
   version "0.0.32"
@@ -8753,6 +8760,11 @@ lockfile@^1.0.4:
   dependencies:
     signal-exit "^3.0.2"
 
+lodash-es@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
+  integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
+
 lodash-webpack-plugin@^0.11.4:
   version "0.11.5"
   resolved "https://registry.yarnpkg.com/lodash-webpack-plugin/-/lodash-webpack-plugin-0.11.5.tgz#c4bd064b4f561c3f823fa5982bdeb12c475390b9"
@@ -11124,6 +11136,11 @@ pnp-webpack-plugin@^1.5.0:
   dependencies:
     ts-pnp "^1.1.2"
 
+pointer-events-polyfill@^0.4.4-pre:
+  version "0.4.4-pre"
+  resolved "https://registry.yarnpkg.com/pointer-events-polyfill/-/pointer-events-polyfill-0.4.4-pre.tgz#d745eb0cef8aa3f661cdba1364b9728b46d0872f"
+  integrity sha512-t7iitVY5jW9mGOFZEHphJOzB8eMhoYaE6I5HqsUX14rjsPa9F6OlMOCj3EpqDzNb/8XtMk2BxMpOyePPyuefHw==
+
 portfinder@^1.0.21:
   version "1.0.24"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.24.tgz#11efbc6865f12f37624b6531ead1d809ed965cfa"
@@ -12079,7 +12096,7 @@ react-portal@^3.1.0:
   dependencies:
     prop-types "^15.5.8"
 
-react-reconciler@^0.20.0:
+react-reconciler@0.20.4, react-reconciler@^0.20.0:
   version "0.20.4"
   resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.20.4.tgz#3da6a95841592f849cb4edd3d38676c86fd920b2"
   integrity sha512-kxERc4H32zV2lXMg/iMiwQHOtyqf15qojvkcZ5Ja2CPkjVohHw9k70pdDBwrnQhLVetUJBSYyqU3yqrlVTOajA==
@@ -12205,6 +12222,19 @@ react-textarea-autosize@^7.1.0:
   dependencies:
     "@babel/runtime" "^7.1.2"
     prop-types "^15.6.0"
+
+react-three-fiber@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/react-three-fiber/-/react-three-fiber-2.4.3.tgz#2eb16d2ba7a8b40e37a8a994507745b2769162db"
+  integrity sha512-XL5GxJyoX2FY1UjdPmlKU95+NCR7UIVgI4upQEXockpp41K5z+hXoC3S8gvJbd0XfRs1dii1uk5F9pz9vp/IvQ==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@types/three" "^0.103.2"
+    lodash-es "^4.17.15"
+    pointer-events-polyfill "^0.4.4-pre"
+    react-reconciler "0.20.4"
+    resize-observer-polyfill "^1.5.1"
+    scheduler "0.13.3"
 
 react-toggled@^1.1.2:
   version "1.2.7"
@@ -12807,6 +12837,11 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
+
 resolve-cwd@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
@@ -13055,6 +13090,14 @@ saxes@^3.1.9:
   integrity sha512-Ydydq3zC+WYDJK1+gRxRapLIED9PWeSuuS41wqyoRmzvhhh9nc+QQrVMKJYzJFULazeGhzSV0QleN2wD3boh2g==
   dependencies:
     xmlchars "^2.1.1"
+
+scheduler@0.13.3:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.3.tgz#bed3c5850f62ea9c716a4d781f9daeb9b2a58896"
+  integrity sha512-UxN5QRYWtpR1egNWzJcVLk8jlegxAugswQc984lD3kU7NuobsO37/sRfbpTdBjtnD5TBNFA2Q2oLV5+UmPSmEQ==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 scheduler@^0.13.2, scheduler@^0.13.6:
   version "0.13.6"
@@ -14335,6 +14378,11 @@ text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
+
+three@*, three@^0.108.0:
+  version "0.108.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.108.0.tgz#53d26597c7932f214bb43f4655e566d2058143b5"
+  integrity sha512-d1ysIXwi8qTlbmMwrTxi5pYiiYIflEr0e48krP0LAY8ndS8c6fkLHn6NvRT+o76/Fs9PBLxFViuI62iGVWwwlg==
 
 through2@^2.0.0, through2@^2.0.1, through2@~2.0.3:
   version "2.0.5"
