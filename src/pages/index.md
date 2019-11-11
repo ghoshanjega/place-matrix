@@ -1,21 +1,23 @@
 ---
 templateKey: index-page
 title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+image: /img/wcbenoy_outdoor-indoor_norbth2000.jpg
+heading: Leading congestion control in complex buildings.
+subheading: This is some benchmark of how much percentage the performance can be improved.
 mainpitch:
-  title: Why placematrix
+  title: About placematrix
   description: >
-    placematrix is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Through our varied backgrounds we seek to passionately integrate innovative
+    research practices with traditional methods of urban design and master
+    planning. Working closely with designers, planners and institutes, we offer
+    services related to 3-dimensional spatial network analysis that can plug-in
+    into their workflow and allow them to explore a variety of evidence-based
+    best option scenarios.
 description: >-
-  placematrix is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  placematrix is the ultimate spot for coffee lovers who want to learn about
+  their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -47,8 +49,8 @@ intro:
         sale. The full price you pay goes to the artist.
   heading: What we offer
   description: >
-    placematrix is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
+    placematrix is the ultimate spot for coffee lovers who want to learn about
+    their java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 main:
@@ -68,3 +70,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
