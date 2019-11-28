@@ -4,7 +4,7 @@ title: Our Team
 image: /img/wcbenoy_outdoor-indoor_norbth2000.jpg
 heading: Some heading
 description: >-
-  hrough our varied backgrounds we seek to passionately integrate innovative
+  Through our varied backgrounds we seek to passionately integrate innovative
   research practices with traditional methods of urban design and master
   planning. Working closely with designers, planners and institutes, we offer
   services related to 3-dimensional spatial network analysis that can plug-in
@@ -38,7 +38,7 @@ intro:
         evidence-based spatial design in major cities including Paris, London,
         Boston, Shanghai. Furthermore, he has been involved in studying
         walkability in urban environments for over 10 years.   
-  heading: What we offer
+  heading: Can add some team photos here if you want. Or remove it.
   description: >
     placematrix is the ultimate spot for coffee lovers who want to learn about
     their java’s origin and support the farmers that grew it. We take coffee
