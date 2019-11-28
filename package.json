@@ -1,11 +1,12 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.3",
-  "author": "Austin Green",
+  "name": "place-matrix",
+  "description": "place-matrix startup website",
+  "version": "0.0.9",
+  "author": "Ghoshan Jaganathmani",
   "dependencies": {
     "bulma": "^0.7.0",
     "gatsby": "^2.13.31",
+    "gatsby-cli": "^2.8.9",
     "gatsby-image": "^2.0.23",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "^4.1.6",
@@ -37,7 +38,6 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "main": "n/a",
   "scripts": {
     "clean": "gatsby clean",

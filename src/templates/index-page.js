@@ -12,8 +12,9 @@ import BlogRoll from "../components/BlogRoll";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-const style = {
-  height: 250 // we can control scene size by setting container dimensions
+const threeJSstyle = {
+  height: 250, // we can control scene size by setting container dimensions
+  display: "none"
 };
 
 export class IndexPageTemplate extends Component {
@@ -50,7 +51,7 @@ export class IndexPageTemplate extends Component {
     this.controls = new OrbitControls(this.camera, this.el);
     this.renderer = new THREE.WebGLRenderer();
     this.renderer.setSize(width, height);
-    this.el.appendChild(this.renderer.domElement); // mount using React ref
+    // this.el.appendChild(this.renderer.domElement); // ThreeJS
   };
 
   // Here should come custom code.
@@ -163,7 +164,7 @@ export class IndexPageTemplate extends Component {
                   // boxShadow:
                     // "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
                   // backgroundColor: "rgb(255, 68, 0)",
-                  color: "white",
+                  color: "black",
                   lineHeight: "1",
                   paddingBottom: "0.25em"
                 }}
@@ -176,7 +177,7 @@ export class IndexPageTemplate extends Component {
                   // boxShadow:
                     // "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
                   // backgroundColor: "rgb(255, 68, 0)",
-                  color: "white",
+                  color: "black",
                   lineHeight: "1",
                   paddingBottom: "1em"
                 }}
@@ -209,7 +210,7 @@ export class IndexPageTemplate extends Component {
             <div className="container">
               <div className="section">
                 <div className="columns">
-                  <div className="column is-10 is-offset-1">
+                  <div className="column is-10 is-offset-1 is-12-mobile is-offset-0-mobile">
                     <div className="content">
                       <div className="content">
                         <div className="tile">
@@ -219,15 +220,7 @@ export class IndexPageTemplate extends Component {
                           <h3 className="subtitle">{mainpitch.description}</h3>
                         </div>
                       </div>
-                      <div style={style} ref={ref => (this.el = ref)} />
-                      {/* <div className="columns">
-                        <div className="column is-12">
-                          <h3 className="has-text-weight-semibold is-size-2">
-                            {heading}
-                          </h3>
-                          <p>{description}</p>
-                        </div>
-                      </div> */}
+                      <div style={threeJSstyle} ref={ref => (this.el = ref)} />
                       <Features gridItems={intro.blurbs} />
                       <div className="columns">
                         <div className="column is-12 has-text-centered">
