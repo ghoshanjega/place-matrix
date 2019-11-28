@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Great coffee with a conscience
-image: /img/wcbenoy_outdoor-indoor_norbth2000.jpg
+image: /img/gov-up_norbth2000-compressor-1-.jpg
 heading: Leading congestion control in complex buildings.
 subheading: This is some benchmark of how much percentage the performance can be improved.
 mainpitch:
