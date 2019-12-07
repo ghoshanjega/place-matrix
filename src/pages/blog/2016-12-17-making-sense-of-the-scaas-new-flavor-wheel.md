@@ -11,7 +11,7 @@ tags:
   - flavor
   - tasting
 ---
-![flavor wheel](/img/3.jpg)
+![flavor wheel](/img/blog-index.jpg)
 
 The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
 
@@ -28,10 +28,10 @@ The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-pr
 * manufacturers
 * baristas
 
-![another image](/img/2.jpg)
+![another image](/img/blog-index.jpg)
 
-![](/img/4.jpg)
+![](/img/blog-index.jpg)
 
-![](/img/1.jpg)
+![](/img/blog-index.jpg)
 
 Hey there you may want to type something about this picture too.
