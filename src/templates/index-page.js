@@ -190,7 +190,7 @@ export class IndexPageTemplate extends Component {
                   height: "4rem",
                   width: "20rem",
                   fontSize: "1.8rem",
-                  backgroundImage: "linear-gradient(125deg, rgb(129, 100, 251) 0%, rgb(215, 125, 254) 100%)",
+                  backgroundImage: "linear-gradient(125deg, rgb(129, 100, 100) 0%, rgb(0, 0, 0) 100%)",
                   boxShadow: "rgba(0, 0, 0, 0.3) 0px 1px 2px 0px",
                   cursor: "pointer",
                   margin: "1rem",
