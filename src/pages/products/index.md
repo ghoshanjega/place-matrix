@@ -38,11 +38,14 @@ intro:
         evidence-based spatial design in major cities including Paris, London,
         Boston, Shanghai. Furthermore, he has been involved in studying
         walkability in urban environments for over 10 years.   
-  heading: Ignore this
-  description: |
-    Ignore this. Team photo below. please crop all images to same size.
+  heading: Can add some team photos here if you want. Or remove it.
+  description: >
+    placematrix is the ultimate spot for coffee lovers who want to learn about
+    their java’s origin and support the farmers that grew it. We take coffee
+    production, roasting and brewing seriously and we’re glad to pass that
+    knowledge to anyone. This is an edit via identity...
 main:
-  heading: 'This section for more team photos. '
+  heading: If anything is required down here
   description: >+
     through our varied backgrounds, we seek to passionately integrate innovative
     research practices with traditional methods of urban design and master
