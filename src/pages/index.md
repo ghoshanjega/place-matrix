@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Rethinking places.
-image: /img/indoor-outdoor-shatin.jpg
+image: /img/1.jpg
 heading: Leading congestion control in complex buildings.
 subheading: This is some benchmark of how much percentage the performance can be improved.
 mainpitch:
