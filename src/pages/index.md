@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Rethinking places.
-image: /img/ped-spaces-wanchai_exp-01-min.jpg
+image: /img/ped-spaces_sha-tin-01-min.jpg
 heading: Leading congestion control in complex buildings.
 subheading: This is some benchmark of how much percentage the performance can be improved.
 mainpitch:
