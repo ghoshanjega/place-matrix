@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: Rethinking places.
-image: /img/1.jpg
+title: Rethinking social spaces.
+image: /img/gov-up_norbth2000-compressor-1-.jpg
 heading: Leading congestion control in complex buildings.
 subheading: This is some benchmark of how much percentage the performance can be improved.
 mainpitch:

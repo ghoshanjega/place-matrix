@@ -1,17 +1,17 @@
 ---
 templateKey: blog-post
-title: 'Analysing new towns: Sha Tin'
+title: BENOY mall at Shatin
 date: 2016-12-17T15:04:10.000Z
 description: >-
   The Coffee Taster’s Flavor Wheel, the official resource used by coffee
   tasters, has been revised for the first time this year.
-featuredpost: true
-featuredimage: /img/6.jpg
+featuredpost: false
+featuredimage: /img/shatin_roadnetwork.jpg
 tags:
   - flavor
   - tasting
 ---
-![flavor wheel](/img/blog-index.jpg)
+![flavor wheel](/img/shatin_roadnetwork.jpg)
 
 The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
 
@@ -28,10 +28,6 @@ The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-pr
 * manufacturers
 * baristas
 
-![another image](/img/blog-index.jpg)
-
-![](/img/blog-index.jpg)
-
-![](/img/blog-index.jpg)
+![another image](/img/benoy-scene-400.jpg)
 
 Hey there you may want to type something about this picture too.
