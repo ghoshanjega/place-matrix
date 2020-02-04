@@ -1,15 +1,95 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import "~bulma"
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 // Config vars
 // placematrix logo brand color: #FD461E
 $placematrix-blue: #3600fa
 $placematrix-blue-invert: #fff
 $placematrix-logo-font: Century-Gothic, regular
+$font-stack: 'Montserrat', sans-serif
+
+body
+  font: 100% $font-stack
 
 $primary: $placematrix-blue
 $primary-invert: $placematrix-blue-invert
-$body-color: #333
+// $body-color: #333
 $black: #2b2523
+
+.frontui
+  position: absolute
+  z-index: 100
+  height: 100vh
+  width: 100vw
+  top: 0
+  left: 0
+  padding: 0
+
+// .titlebottom
+  // color: black
+  // background: white
+  // padding-left: 10vw
+  // padding-right: 2vw
+  // background-clip: padding-box
+  // bottom: 0
+  // position: absolute
+  // display: inline-block
+  // border-radius: 0 10px 0 0 
+  // font-weight: bolder
+  // border:  8px solid
+  // border-left:  0px
+  // border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66))
+  // border-image-slice: 1
+  // transition: all .2s ease-in-out
+
+.titlebottom
+  bottom: 1vh
+  position: absolute
+  z-index: 100
+
+.titlebottombut
+  bottom: 2vh
+  position: absolute
+  display: flex
+  @media screen and ( max-width: 1000px) 
+    display: block !important
+    // right: 5vw
+    :last-child
+      margin-bottom: 0
+
+  
+
+.frontbuttons
+  font-weight: bold
+  font-size: 1.2em
+  margin-right: 1em
+  width: 7em
+  @media screen and ( max-width: 1000px) 
+    font-size: 1em
+    margin-bottom: 2vh
+
+.colorbar
+  position: absolute
+  top: 4vh
+  left: 4vw
+
+
+// .titlebottom:hover
+//   transform: scale(1.05)
+  
+.frontinteract
+  top: 10vh
+  right: 10vw
+  position: absolute
+  // width: 10vw
+  // border-radius: 50%
+  // padding: 0
+
+.closeButton
+  background-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66))
+  padding: 0
+  border-radius: 50%
+
 
 .navbar
   padding-top: 4rem

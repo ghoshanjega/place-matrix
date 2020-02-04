@@ -6,6 +6,11 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import PMhome from "../components/PmhomeComponent";
+import FrontButton from "../components/frontbutton";
+import ColorBar from "../components/ColorBarComponent";
+
+import closeButton from "../img/close-button.png";
 
 // import IndexPageTemplate from '../components/IndexPage'
 
@@ -13,8 +18,8 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 const threeJSstyle = {
-  height: 250, // we can control scene size by setting container dimensions
-  display: "none"
+  height: "100vh",
+  width: "100vw"
 };
 
 export class IndexPageTemplate extends Component {
@@ -49,9 +54,10 @@ export class IndexPageTemplate extends Component {
     // OrbitControls allow a camera to orbit around the object
     // https://threejs.org/docs/#examples/controls/OrbitControls
     this.controls = new OrbitControls(this.camera, this.el);
+    this.controls.enableZoom = false;
     this.renderer = new THREE.WebGLRenderer();
     this.renderer.setSize(width, height);
-    // this.el.appendChild(this.renderer.domElement); // ThreeJS
+    this.el.appendChild(this.renderer.domElement); // ThreeJS
   };
 
   // Here should come custom code.
@@ -129,131 +135,52 @@ export class IndexPageTemplate extends Component {
       })
     };
 
-    console.log(this.props.image)
+    console.log(this.props.image);
     return (
       <div>
-        <div>
-          <div
-            className="full-width-image margin-top-0"
-            style={{
-              backgroundImage: `url(${
-                !!image.childImageSharp
-                  ? image.childImageSharp.fluid.src
-                  : image
-              })`,
-              backgroundPosition: `top left`,
-              backgroundAttachment: `fixed`,
-              justifyContent: "left",
-            }}
-          >
-            <div className="column">
-            <div
-            className="column is-10 is-offset-1"
-              style={{
-                // display: "flex",
-                // height: "150px",
-                lineHeight: "1",
-                justifyContent: "space-around",
-                alignItems: "left",
-                flexDirection: "column"
-              }}
-            >
-              <h1
-                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-                style={{
-                  // boxShadow:
-                    // "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  // backgroundColor: "rgb(255, 68, 0)",
-                  color: "black",
-                  lineHeight: "1",
-                  paddingBottom: "0.25em"
-                }}
-              >
-                {title}
-              </h1>
-              <h3
-                className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-                style={{
-                  // boxShadow:
-                    // "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  // backgroundColor: "rgb(255, 68, 0)",
-                  color: "black",
-                  lineHeight: "1",
-                  paddingBottom: "1em"
-                }}
-              >
-                {subheading}
-              </h3>
-              <button style={{
-                  color: "white",
-                  textTransform: "uppercase",
-                  height: "4rem",
-                  width: "20rem",
-                  fontSize: "1.8rem",
-                  backgroundImage: "linear-gradient(125deg, rgb(129, 100, 251) 0%, rgb(215, 125, 254) 100%)",
-                  boxShadow: "rgba(0, 0, 0, 0.3) 0px 1px 2px 0px",
-                  cursor: "pointer",
-                  margin: "1rem",
-                  borderWidth: "initial",
-                  borderStyle: "none",
-                  borderColor: "initial",
-                  borderImage: "initial",
-                  outline: "none",
-                  borderRadius: "2.7rem",
-                  transition :"box-shadow 200ms ease-in-out 0s",
-                }}>whitepaper</button>
+        <div style={threeJSstyle} ref={ref => (this.el = ref)} />
+        <div className="frontui columns is-mobile">
+          <div className="column is-half-desktop is-two-thirds-mobile">
+            <div style={{}} className="is-size-1 is-size-3-mobile colorbar">
+              <ColorBar />
             </div>
+            <div style={{}} className="is-size-1 is-size-2-mobile titlebottom">
+              <PMhome />
             </div>
 
+            {/* <h1 className="is-size-1 is-size-2-mobile titlebottom">
+            Place Matrix
+          </h1> */}
           </div>
-          <section className="section section--gradient">
-            <div className="container">
-              <div className="section">
-                <div className="columns">
-                  <div className="column is-10 is-offset-1 is-12-mobile is-offset-0-mobile">
-                    <div className="content">
-                      <div className="content">
-                        <div className="tile">
-                          <h1 className="title">{mainpitch.title}</h1>
-                        </div>
-                        <div className="tile">
-                          <h3 className="subtitle">{mainpitch.description}</h3>
-                        </div>
-                      </div>
-                      <div style={threeJSstyle} ref={ref => (this.el = ref)} />
-                      <Features gridItems={intro.blurbs} />
-                      <div className="columns">
-                        <div className="column is-12 has-text-centered">
-                          <Link className="btn" to="/products">
-                            Get to know the team
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="column is-12">
-                        <h3 className="has-text-weight-semibold is-size-2">
-                          Latest Projects
-                        </h3>
-                        <BlogRoll />
-                        <div className="column is-12 has-text-centered">
-                          <Link className="btn" to="/blog">
-                            Read more
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="column">
+            <div className="field is-grouped titlebottombut">
+              <p className="control">
+                <Link to="/blog">
+                  <button className="button is-rounded frontbuttons">
+                    Projects
+                  </button>
+                </Link>
+              </p>
+
+              <p className="control">
+                <Link to="/about">
+                  <button className="button is-rounded frontbuttons">Learn</button>
+                </Link>
+              </p>
+              <p className="control">
+                <Link to="/contact">
+                  <button className="button is-rounded frontbuttons">
+                    Contact
+                  </button>
+                </Link>
+              </p>
             </div>
-          </section>
+          </div>
         </div>
-        
       </div>
     );
   }
 }
-
-
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
@@ -268,8 +195,8 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
-      />
-      {/* <IndexPageTemplate /> */}
+      ></IndexPageTemplate>
+      {/* <BlogRoll /> */}
     </Layout>
   );
 };
